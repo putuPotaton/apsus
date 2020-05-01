@@ -1,11 +1,11 @@
 .navbar {
   background: rgb(195, 195, 214);
-  background: linear-gradient(
+  /* background: linear-gradient(
     112deg,
     rgba(39, 39, 49, 0.97) 12%,
     rgba(40, 40, 49, 0.8455531870951506) 57%,
     rgba(39, 39, 48, 0.7615195736497724) 91%
-  );
+  ); */
   display: flex;
   flex-direction: row;
   justify-content: start;
