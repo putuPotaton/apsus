@@ -9,7 +9,7 @@ template:`
         </label>
                 <label class="add-bar-label">
                 <input type="radio" v-model="noteInfo.noteType" class="add-bar-input-radio" name="noteType" value="noteImg">
-                <img class="add-bar-input-radio-img" src="/img/addBarIMG/picture.png">
+                <img class="add-bar-input-radio-img" src="img/addBarIMG/picture.png">
 </label>
                 <label class="add-bar-label">
                     <input type="radio" v-model="noteInfo.noteType"  class="add-bar-input-radio" name="noteType" value="noteVideo">
