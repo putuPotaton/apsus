@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+
+.emailPreview-container > ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+
+.emailList-container {
+    background-color: rgb(214, 233, 238);
+    flex-basis: 85%;
+}
+
+
+

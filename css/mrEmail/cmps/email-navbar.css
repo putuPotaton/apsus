@@ -1,0 +1,23 @@
+.emailNavbar-container {
+    display: flex;
+    background-color: lightgray;
+    flex-direction: column;
+    flex-basis: 15%;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    padding-top: 10px;
+}
+
+.emailNavbar-container > *{
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    /* padding: 10px; */
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+}

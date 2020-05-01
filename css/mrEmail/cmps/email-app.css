@@ -1,0 +1,9 @@
+.emailApp-container > div {
+    display: flex;
+    height: 86vh;
+}
+
+.emailApp-container {
+    background-color: rgb(214, 233, 238);
+
+}

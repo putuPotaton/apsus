@@ -1,0 +1,134 @@
+@font-face {
+    font-family: roboto;
+    src: url('/typography/Roboto-Light.ttf');
+  }
+
+
+  @font-face {
+    font-family: prata;
+    src: url('/typography/Prata-Regular.ttf');
+  }
+
+
+  
+
+* {
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+  font-size: 0.85rem;
+}
+
+body {
+  background: rgba(254, 255, 243, 0.58);
+  padding: 0px;
+}
+
+.book-prev-container {
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 350px;
+  transition: all .2s;
+}
+
+.book-prev-container a {
+  text-align: center;
+  position: relative;
+}
+
+.book-prev-container > * {
+  text-decoration: none;
+  color: rgba(45, 128, 139, 0.753);
+}
+.book-prev-container:hover {
+    -webkit-box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 17px -4px rgba(0,0,0,0.75);
+    
+}
+.book-prev-container:hover::after{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+.book-prev-container {
+    position: relative;
+  align-items: center;
+  padding: 0px;
+}
+.book-title {
+  position: relative;
+}
+.prev-img-container {
+  position: relative;
+}
+.prev-img-container .book-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all .2s;
+}
+
+.book-prev-container h4 {
+  margin: 0.4rem;
+  color: rgb(255, 255, 255);
+}
+.book-prev-txt {
+    font-size: 0.5rem;
+    font-weight: 100;
+    padding-top: 0.25rem;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(39,39,49);
+  background: linear-gradient(0deg, rgba(39,39,49,0.97) 12%, rgba(40,40,49,0.8455531870951506) 57%, rgba(39,39,48,0.7615195736497724) 91%);
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prev-img-container .on-sale {
+  position: absolute;
+  object-fit: contain;
+  max-width: 80px;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  opacity: 0.65;
+}
+
+.white-screen{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.delete-btn{
+    font-size: 1.2rem;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    z-index: 3;
+}
+
+
+.fa-trash-alt:before {
+    content: "\f2ed";
+    background-color: #ffffffbd;
+    padding: 4px;
+}

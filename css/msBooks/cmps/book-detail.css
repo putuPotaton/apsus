@@ -1,0 +1,102 @@
+.detail-img-container{
+    position: relative;
+    max-width: 400px;
+
+}
+
+.detail-img-container .book-cover{
+max-width: 300px;
+flex: 1;
+height: auto;
+object-fit: contain;
+margin-bottom: 2.5rem;
+}
+
+.detail-img-container .on-sale{
+    position: absolute;
+    object-fit: contain;
+    max-width: 80px;
+    height: auto;
+    top: 10px;
+    right: 50px;
+}
+
+.book-details-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 2rem;
+    justify-content: space-between;
+}
+.book-details-info-container h4{
+    margin: 0.5rem;
+}
+
+.book-details-container{
+    padding:2rem;
+    display: flex;
+}
+.book-review-form textarea{
+    resize: none;
+    width: 50ch;
+    height: 15ch;
+}
+
+.book-review-form button{
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    align-self: center;
+    background: linear-gradient( 112deg, rgba(39, 39, 49, 0.97) 12%, rgba(40, 40, 49, 0.8455531870951506) 57%, rgba(39, 39, 48, 0.7615195736497724) 91% );
+    color: rgb(238, 238, 255);
+    transition:  all .2s;
+}
+.book-review-form button:hover{
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    align-self: center;
+    background: linear-gradient( 112deg, rgba(39, 39, 49, 0.97) 12%, rgba(40, 40, 49, 0.8455531870951506) 57%, rgba(39, 39, 48, 0.7615195736497724) 91% );
+    color: rgb(238, 238, 255);
+}
+
+.review-title{
+    font-size: 1.25rem;
+    background: linear-gradient( 112deg, rgba(39, 39, 49, 0.97) 12%, rgba(40, 40, 49, 0.8455531870951506) 57%, rgba(39, 39, 48, 0.7615195736497724) 91% );    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.review-prev{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.next-prev{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.reviews-title{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 30px;
+    color:rgb(206, 209, 188);
+    font-size: 1.25rem;
+}
+
+.book-details-upper-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.reviews{
+    width:100%
+}

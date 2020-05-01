@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "allura";
+  src: url("/fonts/Allura-Regular.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(49, 45, 45, 0.603);
+}
+
+.header {
+  height: 7rem;
+  background-color: rgb(32, 30, 30);
+  margin: 0;
+}
+
+.header h1 {
+  color: rgb(246, 191, 240);
+  margin: 0rem;
+  padding: 0.5rem;
+  font-size: 5.2rem;
+  font-family: allura;
+  font-weight: lighter;
+}
+
+.buttons-container {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons-container span {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  margin: 1.5rem;
+}

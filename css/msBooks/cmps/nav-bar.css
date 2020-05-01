@@ -1,0 +1,45 @@
+.navbar{
+    min-width: 500px;
+display: flex;
+justify-content: flex-start;
+border-bottom: rgba(141, 178, 207, 0.589) 1px solid;
+background: rgb(4,101,132);
+background: linear-gradient(0deg, rgba(4,101,132,0.4096989137451855) 36%, rgba(5,132,171,0.4096989137451855) 97%);
+}
+
+
+
+.nav-link{
+    margin-inline-end: 18px;
+    vertical-align: center;
+    line-height: 3rem;
+    color: rgb(121, 194, 194);
+text-decoration: none;
+font-size: 1.75rem;
+}
+
+.nav-link:not(:last-child)::after{
+    content: '  |';
+    margin-inline-start: 10px;
+
+    color: rgba(175, 205, 212, 0.493);
+}
+
+.nav-link:hover{
+    color: rgba(59, 91, 134, 0.589);
+}
+.nav-link:onclick{
+    cursor: default;
+}
+
+
+.btn-nav-back{
+    margin-inline-end: 2rem;
+    color: lightslategrey;
+    fill: lightsteelblue;
+    font-size: 1.75rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
