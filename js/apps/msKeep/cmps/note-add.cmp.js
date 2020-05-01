@@ -5,19 +5,19 @@ template:`
     <div class="note-type-opts-container" >
         <label class="add-bar-label">
             <input type="radio" v-model="noteInfo.noteType" class="add-bar-input-radio" name="noteType" value="noteTxt">
-            <img class="add-bar-input-radio-img" src="../../../../img/addBarIMG/note.png">
+            <img class="add-bar-input-radio-img" src="img/addBarIMG/note.png">
         </label>
                 <label class="add-bar-label">
                 <input type="radio" v-model="noteInfo.noteType" class="add-bar-input-radio" name="noteType" value="noteImg">
-                <img class="add-bar-input-radio-img" src="../../../../img/addBarIMG/picture.png">
+                <img class="add-bar-input-radio-img" src="/img/addBarIMG/picture.png">
 </label>
                 <label class="add-bar-label">
                     <input type="radio" v-model="noteInfo.noteType"  class="add-bar-input-radio" name="noteType" value="noteVideo">
-                    <img class="add-bar-input-radio-img" src="../../../../img/addBarIMG/youtube.png">
+                    <img class="add-bar-input-radio-img" src="img/addBarIMG/youtube.png">
 </label>
                         <label class="add-bar-label">
                         <input type="radio" v-model="noteInfo.noteType" class="add-bar-input-radio" name="noteType" value="noteTodo">
-                        <img class="add-bar-input-radio-img" src="../../../../img/addBarIMG/list.png">
+                        <img class="add-bar-input-radio-img" src="img/addBarIMG/list.png">
 </label>
 
 </div>
