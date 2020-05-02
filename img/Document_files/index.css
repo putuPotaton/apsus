@@ -3,8 +3,8 @@
 }
 
 @font-face {
-  font-family: "allura";
-  src: url("/fonts/Allura-Regular.ttf");
+  font-family: 'allura';
+  src: url('/fonts/Allura-Regular.ttf');
 }
 body {
   margin: 0;
