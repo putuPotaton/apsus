@@ -20,6 +20,9 @@
   font-size: 1.6rem;
   transition: all 0.3s;
 }
+.nav-link:nth-child(3){
+  display: none;
+}
 .nav-link.router-link-active {
   background-color: rgba(255, 255, 255);
   color: rgb(35, 21, 95);
