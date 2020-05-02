@@ -99,11 +99,16 @@
   width: 50ch;
 }
 .filter-container .filter-vers-btn{
+  padding: 10px;
   font-size:0.9rem;
 }
+.filter-container .labels-container{
+margin-top: 0.45rem;
+}
 
-.filter-container{
-  margin: 0;
+.notes-container .filter-container{
+  margin: 0.7rem auto;
+  width: 96%;
 }
 .add-bar-input-radio-img {
   margin: 0 0.45rem;
@@ -113,5 +118,8 @@
   object-fit: cover;
   height: 3rem;
   padding: 10px;
+}
+.note-text-input-add-bar{
+  width: 100%;
 }
 }

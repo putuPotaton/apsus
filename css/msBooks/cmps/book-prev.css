@@ -1,12 +1,12 @@
 @font-face {
     font-family: roboto;
-    src: '/typography/Roboto-Light.ttf'
+    src: url('/typography/Roboto-Light.ttf');
   }
 
 
   @font-face {
     font-family: prata;
-    src: '/typography/Prata-Regular.ttf'
+    src: url('/typography/Prata-Regular.ttf');
   }
 
 
