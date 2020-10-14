@@ -15,19 +15,19 @@ export default {
     <div class="color-opt"
     v-for="color in colors"
     :style="{'background-color': color}"
-    @click.stop ="$emit('changeBGC', color, note.id)">
+    @click.stop ="onColorChoice(color, note.id)">
     </div>
     </div>
 
     <div class="label-picker puff-in-center"
     v-if="isOnLabelEdit"
     >
-    <input type="text" v-model="note.info.label"  @change="$emit('changeLabel', note.info.label, note.id)"/>
+    <input type="text" v-model="note.info.label"  @keyup.enter="toggleLabelEdit" @change="$emit('changeLabel', note.info.label, note.id)"/>
     </div>
     <div class="label-picker puff-in-center"
     v-if="isOnTitleEdit"
     >
-    <input type="text" v-model="note.info.title"  @input="$emit('changeTitle', note.info.title, note.id)"/>
+    <input type="text" v-model="note.info.title" @keyup.enter="togglTitleEdit"  @input="$emit('changeTitle', note.info.title, note.id)"/>
     </div>
 
     
@@ -61,6 +61,10 @@ export default {
         ,togglTitleEdit(){
             this.isOnTitleEdit = !this.isOnTitleEdit
 
+        },
+        onColorChoice(color, noteID){
+            this.$emit('changeBGC', color, noteID)
+            this.isOnColorPicker=false
         }
     }
 

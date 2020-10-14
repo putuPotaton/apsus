@@ -162,7 +162,7 @@ v-if="isPinnedNotes"
       let labels = []
       this.notes.forEach(note => {
         if (note.info && note.info.label) {
-          labels.push(note.info.label)
+          labels.unshift(note.info.label)
         }
       })
       return labels;

@@ -120,7 +120,7 @@ function addTxtNote(noteData) {
       BGC: "rgba(255, 255, 255, 0.316)"
     }
   };
-  gNotes.push(note);
+  gNotes.unshift(note);
 }
 
 function addImgNote(noteData) {
@@ -130,7 +130,7 @@ function addImgNote(noteData) {
       BGC: "rgba(255, 255, 255, 0.316)"
     }
   };
-  gNotes.push(note);
+  gNotes.unshift(note);
 }
 
 function addTodoNote(noteData) {
@@ -149,7 +149,7 @@ function addTodoNote(noteData) {
       BGC: "rgba(255, 255, 255, 0.316"
   }
   };
-  gNotes.push(note);
+  gNotes.unshift(note);
 }
 
 function addVideoNote(noteData) {
@@ -162,7 +162,7 @@ function addVideoNote(noteData) {
       BGC: "rgba(255, 255, 255, 0.316)"
     }
   };
-  gNotes.push(note);
+  gNotes.unshift(note);
 }
 
 // function addAudioNote(noteData) {

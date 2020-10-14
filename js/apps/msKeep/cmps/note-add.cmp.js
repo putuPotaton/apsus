@@ -1,7 +1,7 @@
 export default{
 template:`
 <div class="add-bar-container">
-    <input type="text" :placeholder="getPlaceHolder" class="note-text-input-add-bar" v-model="noteInfo.info">
+    <input type="text" @keyup.enter="createNote" :placeholder="getPlaceHolder" class="note-text-input-add-bar" v-model="noteInfo.info">
     <div class="note-type-opts-container" >
         <label class="add-bar-label">
             <input type="radio" v-model="noteInfo.noteType" class="add-bar-input-radio" name="noteType" value="noteTxt">
