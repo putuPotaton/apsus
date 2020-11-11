@@ -25,11 +25,14 @@ margin-bottom: 2.5rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    margin-inline-start: 2rem;
     justify-content: space-between;
 }
 .book-details-info-container h4{
     margin: 0.5rem;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .book-details-container{
@@ -74,29 +77,87 @@ margin-bottom: 2.5rem;
 }
 .review-prev{
     width: 90%;
-    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.9rem;
 }
 
 .next-prev{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: absolute;
+    top: 15%;
+    left: 0px;
+    padding: 0 0.5rem;
 }
 .reviews-title{
     width: 90%;
     margin: 0 auto;
     padding: 0 30px;
-    color:rgb(206, 209, 188);
-    font-size: 1.25rem;
+    color:rgb(157, 109, 196);
+    font-size: 1.85rem;
+    
 }
 
 .book-details-upper-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 .reviews{
     width:100%
+}
+
+.book-review-form input[type=text]{
+    background-color: #ffffffbd;
+    border: 1px solid #c7c3c3;
+    padding: 8px 8px;
+    margin: 0.6rem 0px;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    transition: all, .2s;
+}
+
+.book-review-form input[type=text]:hover,
+.book-review-form input[type=text]:focus{
+    background-color: #ffffffe8;
+    border: 1px solid #474040e8;
+    
+}
+
+.book-review-form input[type=date]{
+    width: 24ch;
+    background-color: #ffffffbd;
+    border: 1px solid #c7c3c3;
+    padding: 8px 8px;
+    margin: 0.6rem 0px;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    transition: all, .2s;
+}
+
+.book-review-form input[type=date]:hover,
+.book-review-form input[type=date]:focus{
+    background-color: #ffffffe8;
+    border: 1px solid #474040e8;
+    
+}
+
+.pre{
+    display: flex;
+    flex-direction: column;
+}
+ .pre span{
+    display: block;
+font-size: 1.2rem;
+line-height: 1.95rem;}
+
+
+.book-review-form textarea{
+    margin-top: 0.65rem;
+    padding: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
 }

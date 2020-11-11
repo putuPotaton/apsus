@@ -4,9 +4,9 @@ import stars from './stars-review.cmp.js'
 export default {
     template: `
         <form class = "book-review-form" @submit.prevent="pushReview" >
+        <stars @updateRate="updateRate"></stars>
         <input type="text" placeholder="Books reader" v-model ="review.name">
         <input type="date" v-model ="review.date">
-<stars @updateRate="updateRate"></stars>
 <textarea name="" id="" cols="30" rows="10"  v-model ="review.txt"></textarea>
 <button> Submit!</button>
      </form>
@@ -24,6 +24,9 @@ export default {
     },
     methods: {
         pushReview() {
+            if(!this.review.txt){
+                return
+            }
             const bookId = this.book.id
             bookService.addReview(bookId, this.review)
             this.review = {
