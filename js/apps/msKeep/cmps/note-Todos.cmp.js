@@ -20,7 +20,7 @@ v-if="isTitle">
 
     <div>
         <i  @click.stop="pushNewTodo" class="far fa-plus-square add-todo-btn"   ></i>
-    <input placeholder="type your new todo" v-model="newTodo.txt" class="todo-input" > 
+    <input dragable="true" placeholder="new..." v-model="newTodo.txt" @keydown.enter="pushNewTodo" class="todo-input" > 
 </div>
 
 </div>
@@ -29,7 +29,11 @@ v-if="isTitle">
     data() {
         return {
             info: {},
-            newTodo: { txt: '', id: '', doneAt: null }
+            newTodo: { txt: '', id: '', doneAt: null },
+            base: null,
+            randomized: null,
+            dragging: null,
+            draggedOver: null
         }
     },
     created() {
@@ -56,14 +60,15 @@ v-if="isTitle">
             this.newTodo = { txt: '', id: '', doneAt: null }
         }
     }
-
     ,
 
-    computed:{
-        isTitle(){
-            return this.info.title?  this.info.title: null
+    computed: {
+        isTitle() {
+            return this.info.title ? this.info.title : null
         }
-    }
+    },
+
+
 
 
 }

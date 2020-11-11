@@ -23,7 +23,6 @@ export default {
     methods: {
         removeEmail() {
             eventBus.$emit('remove-email', this.email.id)
-            console.log('sent from expand preview: ',this.email.id)
         }
     },
     created() {

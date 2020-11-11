@@ -1,11 +1,11 @@
 export default {
     template: `
-<div>
+<div class="note-video-container">
 <h3
 v-if="isTitle">
 {{info.title}}
 </h3>
-    <iframe :src="'https://www.youtube.com/embed/'+getVideoID"></iframe>
+    <iframe style="margin-bottom:0.65rem" :src="'https://www.youtube.com/embed/'+getVideoID"></iframe>
 </div>
 
 `,

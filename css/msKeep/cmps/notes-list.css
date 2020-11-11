@@ -9,12 +9,12 @@
 }
 
 .note-prev-container {
-  border-radius: 0.25rem;
+  border-radius: 0.55rem;
   background-color: #fff;
   text-align: center;
   position: relative;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.75);
-  padding: 30px 2px 30px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.45);
+  padding: 12px 2px 40px;
   border: 1px solid rgba(29, 29, 29, 0);
   transition: all 0.3s;
   font-size: 1.55rem;
@@ -43,6 +43,11 @@
   /* max-width:100px; */
   object-fit: contain;
 }
+.note-prev-container h3 {
+  line-height: 2rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
 
 .selected-note-container {
   background-color: rgba(255, 255, 255, 0.932);
@@ -60,7 +65,7 @@
 }
 
 .text-note-textarea {
-    min-height: 10ch;
+  min-height: 10ch;
   border: none;
   background-color: inherit;
   outline: none;
@@ -73,22 +78,76 @@
   padding: 0.6rem;
   min-width: 30ch;
   font-size: 1.25rem;
+  margin-top: 0.3rem;
 }
-.text-note-textarea:hover,
-.text-note-textarea:focus {
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.75);
+.text-note-textarea:first-child {
+  margin-top: 1.85rem;
 }
 
-.remove-note-btn {
-  color: rgba(169, 169, 169, 0.747);
-  position: absolute;
-  top: 6px;
-  right: 2px;
+.text-note-textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.text-note-textarea::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.text-note-textarea::-webkit-scrollbar-thumb {
   cursor: pointer;
+  background: #ecc5f885;
+  transition: all, 0.3s;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.text-note-textarea::-webkit-scrollbar-thumb:hover {
+  background: #881da857;
+}
+
+.text-note-textarea:hover,
+.text-note-textarea:focus {
+  /* box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.75); */
+}
+
+.note-prev-container i.remove-note-btn {
+  color: rgba(56, 53, 53, 0.747);
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  /* padding: 0.55rem; */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.note-prev-container i.remove-note-btn:hover::before {
+  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(238, 101, 101, 0.541);
+  border-radius: 35%;
+  color: black;
+}
+.note-prev-container i.remove-note-btn::before {
+  transition: all, 0.2s;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.85rem;
 }
 
 .remove-note-btn:hover {
   color: tomato;
+}
+
+.note-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.note-video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .todo-input {
@@ -97,7 +156,10 @@
   background-color: inherit;
   display: inline;
   border: none;
-  font-size: 1.33rem;
+  font-size: 1.2rem;
+}
+.todo-input:last-child {
+  margin-bottom: 1.3rem;
 }
 
 .todo-input.done {
@@ -109,13 +171,40 @@
 }
 
 .todo-ul {
-  padding: 2px;
+  padding: 2px 0px;
+  max-height:30ch;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
+
+.todo-ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.todo-ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.todo-ul::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #ecc5f885;
+  transition: all, 0.3s;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.text-note-textarea::-webkit-scrollbar-thumb:hover {
+  background: #881da857;
+}
+
 
 .todo-li {
   display: flex;
   width: 95%;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0px;
 }
 .todos-hr {
   margin: 1.5rem 0 0.5rem;
@@ -144,7 +233,7 @@
 .remove-todo-btn {
   color: rgba(167, 167, 167, 0.815);
   position: absolute;
-  right: 3px;
+  right: 1.1rem;
   cursor: pointer;
 }
 
@@ -166,11 +255,11 @@
 }
 
 .controle-pad {
-  display: block;
   position: absolute;
   right: 5px;
-  bottom: 2px;
+  bottom: 21px;
   margin-top: 10px;
+  height: 1rem;
 }
 
 .select {
@@ -179,17 +268,24 @@
 
 .title-input {
   max-width: 18ch;
+  padding: 10rem;
 }
 .free-text-input {
   min-width: 30ch;
   max-width: 50ch;
 }
 
-.label-picker {
+.label-picker input {
   position: absolute;
-
+  line-height: 1.6rem;
+  font-size: 0.85rem;
+  background-color: rgba(255, 255, 255, 0.8);
   right: 2px;
   bottom: 30px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid gray;
+  outline: none;
 }
 
 .filter-container {
@@ -229,17 +325,21 @@
   float: left;
   width: 2rem;
   height: 1.4rem;
+  cursor: pointer;
 }
 
 .labels-container {
   display: flex;
   background-color: rgba(224, 204, 243, 0.123);
-
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 29px;
   border-radius: 0.85rem;
   border: 1px solid #00000017;
+}
+
+.one-line {
+  max-height: 8ch;
 }
 
 .labels-container span,
@@ -289,12 +389,14 @@
   color: rgb(230, 212, 230);
 }
 .select {
+  padding: 5px;
   outline: none;
   cursor: pointer;
   height: 3rem;
-  background-color: rgba(42, 32, 48, 0.103);
-  border-radius: 0.4rem;
+  background-color: rgba(224, 214, 230, 0.103);
+  border-radius: 0.1rem;
   transition: 0.2s;
+  font-family: roboto;
 }
 .type-opt {
   outline: none;

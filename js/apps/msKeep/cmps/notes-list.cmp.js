@@ -28,6 +28,7 @@ export default {
            @changeBGC="changeBGC"
            ></note-controle>
       <i class="fas fa-trash-alt remove-note-btn"  @click.stop="$emit('remove', currNote.id)"></i>
+      
 </div>
 
       </section>

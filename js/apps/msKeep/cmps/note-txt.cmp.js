@@ -2,7 +2,7 @@
 export default{
     props: ["initialInfo", "idx", "id"],
     template:`
-    <div>
+    <div style="height:90%; margin-top:0.5rem; width=95%">
     <h3
     v-if="isTitle">
     {{info.title}}

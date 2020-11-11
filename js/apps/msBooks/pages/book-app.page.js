@@ -37,7 +37,6 @@ export default{
 
   methods: {
     onBookSelected(book) {
-        console.log(book)
         this.bookSelected = book;
         this.isOnListDisplay=false;
     },
@@ -52,7 +51,6 @@ export default{
     removeBook(bookID) {
       bookService.removeBookByID(bookID)
           .then(()=>{
-              console.log(`book ${bookID} deleted succesfully`);
               eventBus.$emit(EVENT_SHOW_MSG, {
                   txt: `book ${bookID} deleted succesfully`,
                   type: 'success'
@@ -83,7 +81,6 @@ export default{
         })
       }
       if (this.filterBy.minPrice) {
-        console.log('in min price ! ',this.filterBy.minPrice)
         filterBooks = filterBooks.filter(book => {
           // console.log('book price: ' , book.price, 'filterBy.minPrice: ',this.filterBy.minPrice)
          return book.listPrice.amount > this.filterBy.minPrice

@@ -24,11 +24,9 @@ export default {
     methods: {
         setFilter(filter) {
             this.filterBy = filter;
-            console.log('filter set: ', this.filterBy)
         },
         searchBy(){
             if (!this.filterBy) return this.emails;
-            console.log('searching..');
             emailService.getFilteredEmails(this.filterBy)
                 .then(emails => this.emails=emails);
         },

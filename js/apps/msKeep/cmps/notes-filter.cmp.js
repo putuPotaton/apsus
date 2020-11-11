@@ -25,7 +25,7 @@ export default {
 
           <div
           v-if="isTxtFilter"
-           class="swing-in-top-fwd labels-container">
+           class="swing-in-top-fwd labels-container one-line">
           <input class="note-text-input-add-bar free-text-input" type="text" 
           v-model="filterBy.innerText" 
           placeholder="free text in note"
@@ -36,7 +36,7 @@ export default {
 
           <div
           v-if="isTitleFilter"
-           class="swing-in-top-fwd labels-container">
+           class="swing-in-top-fwd labels-container one-line">
            <input class="note-text-input-add-bar swing-in-left-fwd  title-input"
         
            type="text" 

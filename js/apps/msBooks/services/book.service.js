@@ -17,7 +17,6 @@ export default {
 function addBook(book){
   return new Promise(resolve=>{
     book.reviews=[]
-    console.log("in adBookc bookService", book)
     booksDB.unshift(book);
     storageService.store(BOOKS_KEY, booksDB)
 
@@ -84,7 +83,6 @@ function addReview(bookID, review){
 }
 function getNextPrevBookIds(bookID) {
   const idx = booksDB.findIndex(book => book.id === bookID)
-  console.log(idx)
 
   var nextIdx = idx + 1;
   if (nextIdx === booksDB.length) nextIdx = 0; 

@@ -1,11 +1,11 @@
 export default {
     props: ['initialInfo'],
     template: `
-<div>
+<div class="note-img-container">
 <h3
 v-if="isTitle">
 {{info.title}}
-</h3><img :src="getUrl"  alt="" />
+</h3><img style="margin-bottom:0.5rem" :src="getUrl"  alt="" />
 </div>
 `
     ,

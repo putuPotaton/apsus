@@ -53,12 +53,24 @@ export default {
 
     methods: {
         toggleColorPicker() {
+            if(!this.isOnColorPicker){
+                this.isOnLabelEdit=false
+                this.isOnTitleEdit=false
+            }
             this.isOnColorPicker = !this.isOnColorPicker;
         },
         toggleLabelEdit() {
+        if(!this.isOnLabelEdit){
+            this.isOnTitleEdit=false
+            this.isOnColorPicker=false
+        }
             this.isOnLabelEdit = !this.isOnLabelEdit
         }
         ,togglTitleEdit(){
+            if(!this.isOnTitleEdit){
+                this.isOnLabelEdit=false
+                this.isOnColorPicker=false
+            }
             this.isOnTitleEdit = !this.isOnTitleEdit
 
         },

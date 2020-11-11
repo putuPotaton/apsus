@@ -36,9 +36,7 @@ export default {
             this.$emit('reviewPushed')
         },
         updateRate(rateVal){
-            console.log(rateVal)
             this.review.rate=rateVal;
-            console.log(this.review.rate)
         }
     },
     created(){
